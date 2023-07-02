@@ -22,7 +22,8 @@
     "swiper": "^9.3.2",
     "terser": "^5.16.1",
     "vue": "^3.2.37",
-    "vue3-aplayer": "^1.7.3"
+    "vue3-aplayer": "^1.7.3",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@vicons/fa": "^0.12.0",

@@ -3,7 +3,7 @@
   <div class="message">
     <!-- Logo -->
     <div class="logo">
-      <img class="logo-img" :src="siteLogo" alt="logo" />
+      <img class="logo-img" src="/images/icon/头像.jpg" alt="logo" />
       <div class="name text-hidden">
         <span class="bg">{{ siteUrl[0] }}</span>
         <span class="sm">.{{ siteUrl[1] }}</span>
@@ -94,7 +94,7 @@ watch(
       height: 142px;
       margin-left: 12px;
       transform: translateY(-8px);
-      font-family: "Pacifico-Regular";
+      font-family: 'Pacifico-Regular';
 
       .bg {
         font-size: 5rem;
@@ -139,7 +139,7 @@ watch(
 
         p {
           &:nth-of-type(1) {
-            font-family: "Pacifico-Regular";
+            font-family: 'Pacifico-Regular';
           }
         }
       }
