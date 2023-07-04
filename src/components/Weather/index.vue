@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="weather"
-    v-if="weatherData.adCode.city && weatherData.weather.weather"
-  >
+  <div class="weather" v-if="weatherData.adCode.city && weatherData.weather.weather">
     <span>{{ weatherData.adCode.city }}&nbsp;</span>
     <span>{{ weatherData.weather.weather }}&nbsp;</span>
     <span>{{ weatherData.weather.temperature }}℃</span>
@@ -21,7 +18,9 @@ import { Error } from "@icon-park/vue-next";
 
 // 高德开发者 Key
 const mainKey = import.meta.env.VITE_WEATHER_KEY;
-
+const key = function () {
+  console.log(mainKey);
+}
 // 天气数据
 const weatherData = reactive({
   adCode: {
@@ -88,5 +87,6 @@ const onError = (message) => {
 onMounted(() => {
   // 调用获取天气
   getWeatherData();
+  key()
 });
 </script>
